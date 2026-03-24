@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Novensoftech | The Future of SAP Success</title>
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline-variant": "#c3c7ca",
+            "background": "#f9f9f9",
+            "surface-variant": "#e2e2e2",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f1f1f1",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#3b4951",
+            "error": "#ba1a1a",
+            "on-primary-container": "#7a8992",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#002605",
+            "on-secondary-container": "#1c7220",
+            "tertiary": "#000a01",
+            "surface-dim": "#dadada",
+            "surface-tint": "#526069",
+            "surface-bright": "#f9f9f9",
+            "on-primary-fixed": "#0f1d24",
+            "inverse-surface": "#2f3131",
+            "surface-container-low": "#f3f3f3",
+            "secondary": "#166d1c",
+            "on-background": "#1a1c1c",
+            "inverse-primary": "#bac9d2",
+            "primary": "#00080e",
+            "on-tertiary-container": "#509650",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed-variant": "#035315",
+            "primary-fixed": "#d6e5ee",
+            "primary-container": "#132128",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#8ed88a",
+            "surface": "#f9f9f9",
+            "secondary-fixed": "#a0f794",
+            "secondary-container": "#9df492",
+            "on-secondary-fixed-variant": "#00530c",
+            "surface-container": "#eeeeee",
+            "tertiary-fixed": "#a9f5a4",
+            "on-tertiary-fixed": "#002204",
+            "on-surface": "#1a1c1c",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e2e2e2",
+            "on-secondary-fixed": "#002202",
+            "secondary-fixed-dim": "#85da7b",
+            "on-surface-variant": "#43474a",
+            "primary-fixed-dim": "#bac9d2",
+            "surface-container-high": "#e8e8e8",
+            "outline": "#73787b"
+          },
+          fontFamily: {
+            headline: ["Inter"],
+            body: ["Inter"],
+            label: ["Inter"]
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      vertical-align: middle;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased selection:bg-secondary/30">
+  <nav class="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+      <div class="flex items-center gap-4">
+        <img alt="Novensoftech logo" class="h-11 w-auto object-contain" src="./logo_softech1.png" />
+        <div class="hidden sm:block">
+          <div class="text-xl font-bold tracking-tighter text-slate-900">Novensoftech</div>
+          <div class="text-[11px] uppercase tracking-[0.28em] text-slate-500">SAP Consulting</div>
+        </div>
+      </div>
+      <div class="hidden items-center space-x-12 md:flex">
+        <a class="border-b-2 border-emerald-700 pb-1 text-base font-semibold tracking-tight text-emerald-700" href="#">Home</a>
+        <a class="text-base font-medium tracking-tight text-slate-600 transition-colors hover:text-slate-900" href="#">Solutions</a>
+        <a class="text-base font-medium tracking-tight text-slate-600 transition-colors hover:text-slate-900" href="#">Services</a>
+        <a class="text-base font-medium tracking-tight text-slate-600 transition-colors hover:text-slate-900" href="#">About Us</a>
+      </div>
+      <button class="rounded-lg bg-primary px-8 py-3 font-bold text-on-primary transition-all hover:opacity-80 active:scale-95">
+        Contact
+      </button>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="relative flex min-h-[921px] items-center overflow-hidden bg-primary">
+      <div class="absolute inset-0 opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-secondary/20"></div>
+        <img class="h-full w-full object-cover grayscale" alt="Collaborative technical team working together in modern office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHLCdO8HOpOjwnt4_HzWcbOn-39U4NpIhlEPOc5oGlBbcLWLqqS7juRbq56JFz5_WglJNlTDpZtjc8NMv94GlgV1YloPBhIKwakTtDB1GBMYlMAzrHifBag5jcLkqlYGLYBedye4rzK58KQQFZUC7KyzITzVmnzcNZls9J9zuymGTZu2gT7DdpzoOVCDW-p4EGGglIkdnmCJ0gUCyvtQbN1ixpWvVzvKbxbFANv5Dy4R0vFjSqoSucKBWY_991Yqg0TkcewPXJSg" />
+      </div>
+      <div class="relative z-10 mx-auto max-w-7xl px-6 py-24">
+        <div class="max-w-3xl">
+          <span class="mb-6 inline-block rounded-full bg-secondary px-4 py-1 text-xs font-bold uppercase tracking-widest text-on-secondary">
+            SAP Global Talent Partner
+          </span>
+          <h1 class="mb-8 text-5xl font-extrabold leading-[1.1] tracking-tighter text-on-primary md:text-7xl">
+            Unlock the Potential of SAP with World-Class Consultants.
+          </h1>
+          <p class="mb-12 text-xl leading-relaxed text-on-primary-container">
+            Novensoftech bridges the gap between complex enterprise needs and the world's most elite technical talent.
+            We don't just provide software; we provide the architects of your digital future.
+          </p>
+          <div class="flex flex-col gap-6 sm:flex-row">
+            <button class="rounded-lg bg-secondary px-10 py-5 text-lg font-bold text-on-secondary transition-all hover:brightness-110">
+              Hire Talent
+            </button>
+            <button class="rounded-lg border border-white/20 bg-surface-container-lowest/10 px-10 py-5 text-lg font-bold text-on-primary backdrop-blur-md transition-all hover:bg-white/10">
+              Explore Solutions
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 hidden h-2/3 w-1/3 rounded-tl-[100px] border-l border-t border-white/10 bg-surface-container-low/5 p-12 backdrop-blur-3xl xl:block">
+        <div class="flex h-full flex-col justify-between">
+          <div>
+            <span class="material-symbols-outlined mb-6 text-5xl text-secondary">verified_user</span>
+            <h3 class="mb-4 text-2xl font-bold text-on-primary">Certified Excellence</h3>
+            <p class="text-sm leading-loose text-on-primary-container">
+              Rigorous vetting ensures only the top 3% of SAP consultants join our network. Expertise across S/4HANA, BTP, and SuccessFactors.
+            </p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex -space-x-4">
+              <img class="h-12 w-12 rounded-full border-2 border-primary object-cover" alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMlgHfncHKKUpNnVMxxAsiXz10TT0qxwgUdeNwdkKttYpwinIPPo-nF92xKfN_eCRGKzBUvNk_5uesnM6hqpfu8O5aly-JXXiY2q2--QRwea76JzzwoCERXvpvo3SnaMRWtNPDtwz5Tl_uObtuchwjGXgjgsCIqt3OB3LE9mN_mQYdWq0Z-U4A5a7ezdFXSH1oOIhOf00ZNYWvbsvqY69EvHGY7c14a87dEAysL03uEOUHOiQtqzcWnzh5uhPCBIY21mIyxxoOWg" />
+              <img class="h-12 w-12 rounded-full border-2 border-primary object-cover" alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrZnLK9xMxzzRNkJJ50D7UIsOmlYMT6V3l8VseSMkimJUp3_4IuaMtSWrVNhG38p8m4FdhI3ZAMuOYaBhkWVcfNFC0EakpbaVqdkCZgsEX1lkeqNwRIGau1KBwWDZxw5CD-_jAjrs-1A5uTXpl5LiN5-wqcC5ES1wF3r7QyPX6Oi6qx8l3Q4_uvG-IZE3Mgy3UvFTuCXsDfXcDY_VLcFW-f0g05PTUc6z04FTVS6f8P0qHK2RC2_i423WEI6gDQYWnqIFLCHPN6Q" />
+              <img class="h-12 w-12 rounded-full border-2 border-primary object-cover" alt="Expert profile headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7GW2e6TdvvWkK7CrXcyxF8caqpVU8b9vZsW4irh3naJf8FYlTxyTo7xcn2RrYx1K6D8x7Uz6UNYb0odXf8hotR0raSjqwMZG2TRxYnU8zeKtLrzIgejDkdTJQZahPbUvT9KqleMIiasAhzH_PRViGRMtjHbEMau3v63utR0-wEWASAswsplBppVJd9q3c7GlR_mB6evZy1pghz2XlwSjp5ldeKQniu5speGY3KIou6YuUjDQwJSbc9ac8-N4zmA7IjZ61bHxoQw" />
+            </div>
+            <span class="text-sm font-bold tracking-tight text-on-primary">+500 Specialists</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-12">
+      <div class="mx-auto max-w-7xl px-6">
+        <p class="mb-8 text-center text-sm font-semibold uppercase tracking-widest text-on-surface-variant opacity-60">Trusted by Industry Leaders</p>
+        <div class="flex flex-wrap items-center justify-between gap-8 opacity-40 grayscale">
+          <span class="text-2xl font-bold">FORTUNE 500</span>
+          <span class="text-2xl font-bold">TECHCORP</span>
+          <span class="text-2xl font-bold">GLOBAL LOGISTICS</span>
+          <span class="text-2xl font-bold">FINANCE INC</span>
+          <span class="text-2xl font-bold">BIO-SYSTEMS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="mb-20 space-y-4">
+          <h2 class="text-5xl font-black tracking-tighter text-primary">End-to-End SAP Solutions</h2>
+          <div class="h-1 w-24 bg-secondary"></div>
+          <p class="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
+            Tailored strategies designed for sovereign scalability and architectural precision.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
+          <div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-12 transition-all duration-500 hover:bg-primary md:col-span-8">
+            <div class="relative z-10">
+              <span class="material-symbols-outlined mb-6 text-5xl text-secondary group-hover:text-secondary-fixed">settings_suggest</span>
+              <h3 class="mb-4 text-3xl font-bold group-hover:text-white">Full-Scale Implementation</h3>
+              <p class="max-w-md leading-relaxed text-on-surface-variant group-hover:text-slate-400">
+                Bespoke SAP S/4HANA rollouts tailored to your specific industry vertical, ensuring seamless integration and zero-downtime transitions.
+              </p>
+            </div>
+            <div class="absolute -bottom-20 -right-20 opacity-5 transition-opacity group-hover:opacity-10">
+              <span class="material-symbols-outlined text-[300px]">settings_suggest</span>
+            </div>
+          </div>
+          <div class="rounded-xl bg-secondary p-12 text-white md:col-span-4">
+            <span class="material-symbols-outlined mb-6 text-5xl">cloud_upload</span>
+            <h3 class="mb-4 text-2xl font-bold">Cloud Migration</h3>
+            <p class="leading-relaxed text-white/80">
+              Transition your legacy infrastructure to the cloud with secure, scalable SAP on Azure or AWS.
+            </p>
+          </div>
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-low p-12 md:col-span-4">
+            <span class="material-symbols-outlined mb-6 text-5xl text-primary">monitoring</span>
+            <h3 class="mb-4 text-2xl font-bold">Advanced Analytics</h3>
+            <p class="leading-relaxed text-on-surface-variant">
+              Harness the power of SAP Analytics Cloud to drive data-driven decision making across your enterprise.
+            </p>
+          </div>
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-12 transition-all duration-500 hover:shadow-2xl md:col-span-8">
+            <div class="flex flex-col items-start gap-8 md:flex-row">
+              <div class="flex-1">
+                <span class="material-symbols-outlined mb-6 text-5xl text-secondary">support_agent</span>
+                <h3 class="mb-4 text-3xl font-bold">Managed Services</h3>
+                <p class="leading-relaxed text-on-surface-variant">
+                  24/7 technical and functional support for your SAP landscape. We manage the complexity so you can focus on growth.
+                </p>
+              </div>
+              <div class="flex-1 rounded-lg bg-surface-container-low p-6">
+                <ul class="space-y-3 text-sm font-semibold">
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Application Management</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Basis Support</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Security &amp; Compliance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden bg-primary py-32 text-white">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+          <div class="space-y-12">
+            <h2 class="text-5xl font-black leading-tight tracking-tight">Why Novensoftech Leads the SAP Ecosystem</h2>
+            <div class="space-y-8">
+              <div class="flex gap-6">
+                <div class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/10">
+                  <span class="material-symbols-outlined text-3xl text-secondary-fixed">verified</span>
+                </div>
+                <div>
+                  <h4 class="mb-2 text-xl font-bold">Architectural Integrity</h4>
+                  <p class="text-slate-400">We don't just implement software; we design robust digital architectures that withstand market shifts.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/10">
+                  <span class="material-symbols-outlined text-3xl text-secondary-fixed">groups</span>
+                </div>
+                <div>
+                  <h4 class="mb-2 text-xl font-bold">Subject Matter Experts</h4>
+                  <p class="text-slate-400">Our consultants average 15+ years of SAP experience across discrete and process manufacturing.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-xl bg-white/10">
+                  <span class="material-symbols-outlined text-3xl text-secondary-fixed">bolt</span>
+                </div>
+                <div>
+                  <h4 class="mb-2 text-xl font-bold">Accelerated Delivery</h4>
+                  <p class="text-slate-400">Proprietary migration tools that reduce transition timelines by up to 40% compared to industry norms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="relative z-10 rounded-3xl bg-gradient-to-br from-surface-container-highest/20 to-transparent p-1 backdrop-blur-3xl">
+              <div class="space-y-8 rounded-[1.4rem] bg-primary-container p-8">
+                <div class="flex h-48 items-end justify-between gap-2">
+                  <div class="h-[40%] w-full rounded-t-lg bg-secondary-fixed/20"></div>
+                  <div class="h-[65%] w-full rounded-t-lg bg-secondary-fixed/40"></div>
+                  <div class="h-[85%] w-full rounded-t-lg bg-secondary-fixed/60"></div>
+                  <div class="h-[100%] w-full rounded-t-lg bg-secondary-fixed"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+                    <div class="mb-1 text-3xl font-black text-secondary-fixed">98%</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Retention Rate</div>
+                  </div>
+                  <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+                    <div class="mb-1 text-3xl font-black text-secondary-fixed">200+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Global Go-Lives</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-12 -right-12 z-0 h-64 w-64 rounded-full bg-secondary/30 blur-[100px]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface py-32">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mb-16 flex items-end justify-between">
+          <div class="space-y-4">
+            <h2 class="text-5xl font-black tracking-tighter text-primary">Success Stories</h2>
+            <p class="text-xl text-on-surface-variant">Real impact for global enterprises.</p>
+          </div>
+          <div class="flex gap-4">
+            <button class="flex h-12 w-12 items-center justify-center rounded-full border border-outline transition-all hover:bg-primary hover:text-white">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white transition-all hover:bg-secondary">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-500 hover:shadow-xl">
+            <div class="relative h-64 overflow-hidden">
+              <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Modern data center server racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaGQWKVJw_Gj70i2kvHBAk7LsR3zO2Vb5zB1z2Bn5nlBPuTfkuYzou8uoEjtF_56cMuuuYSv7jXG2xWALdM2toHZ1wgkMI0RWwNvRWRh0ZeHN1hhkFpb9iNrSIwpy-vq9MjUKbsPJ4sghYQi-1BuSyqpI4lU6F5SdtpxvN_w2pxECvNTwGPRJE8gYKUf5ffuh1rBj8WkCBZvFdDSowA-LienM_BJYmt5fkgkPEAO7azki-yBA7gz2El8b6X6O2h8viPM7R5BZg2w" />
+              <div class="absolute left-4 top-4 rounded bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-tight text-primary backdrop-blur">
+                Manufacturing
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="mb-4 text-2xl font-bold">Global ERP Harmonization</h3>
+              <p class="mb-6 line-clamp-3 leading-relaxed text-on-surface-variant">
+                How we helped a leading automotive supplier consolidate 14 disparate ERP systems into a single SAP S/4HANA core.
+              </p>
+              <a class="inline-flex items-center gap-2 font-bold text-secondary transition-all hover:gap-4" href="#">
+                Read Case Study <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-500 hover:shadow-xl">
+            <div class="relative h-64 overflow-hidden">
+              <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Digital marketing analytics on a tablet screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqoBA49oW5fSWvi_33kHOxGebGDv4vwf_ZDRtb_y70ZWpBd-bIMPK_GV3rloC3x6uLX6dWCQxo7Whaiczv2_R0mXUVomZgkkqXG0VO0sgV1IQLYG-fb1FELeJrN01SLhjwshYDCVmwEBoSL9sYXfsA2Ty_uEHVT33obymaSoiYlRNX-K-JYI-kponGbGw6KQuJxDia3F7Ej1EktawE4BRc5jT2chiBTMGIiEUWqSne6WxNyqe14zt7BlJvIEwe_QZC9VNVWY1igA" />
+              <div class="absolute left-4 top-4 rounded bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-tight text-primary backdrop-blur">
+                Retail &amp; CPG
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="mb-4 text-2xl font-bold">Cloud-First Transformation</h3>
+              <p class="mb-6 line-clamp-3 leading-relaxed text-on-surface-variant">
+                Migrating 4TB of retail data to SAP RISE, achieving a 30% reduction in total cost of ownership within 12 months.
+              </p>
+              <a class="inline-flex items-center gap-2 font-bold text-secondary transition-all hover:gap-4" href="#">
+                Read Case Study <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="group overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-500 hover:shadow-xl">
+            <div class="relative h-64 overflow-hidden">
+              <img class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Architectural technical blueprint on a desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXLcqAUFmajGVE1D3LiMo-vBm-POI2rhNxT6DdbLQ_2k6Lj8VvZs1V8Hy9xiwWdrmXDIzIx42HNg7tINtWuPY1f2uhpIBdfuIfsHAPHHUCut25fwjPo9az7BteHJoM_FfE5nqgtep5o6leOiM79NCeK7OaMRx9KcfzvaLCHqdx91b83EqmeIW31ge6lPxDmNzE7mSwtmsZvXRbUO97ySyGIWDnOZ08aIGPzqz2KTy4VYJfanCt0_dqo3mEhdossIsQ-p1wo24Srg" />
+              <div class="absolute left-4 top-4 rounded bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-tight text-primary backdrop-blur">
+                Logistics
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="mb-4 text-2xl font-bold">Supply Chain Visibility</h3>
+              <p class="mb-6 line-clamp-3 leading-relaxed text-on-surface-variant">
+                Implementing SAP IBP to provide real-time visibility across a complex multi-node global supply chain.
+              </p>
+              <a class="inline-flex items-center gap-2 font-bold text-secondary transition-all hover:gap-4" href="#">
+                Read Case Study <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto mb-32 max-w-7xl px-6">
+      <div class="flex flex-col items-center gap-12 rounded-xl border-l-4 border-secondary bg-surface-container-lowest p-12 md:flex-row">
+        <div class="flex-shrink-0">
+          <img class="h-24 w-24 rounded-full object-cover" alt="Professional portrait of a tech consultant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSF8cjqC2fNRcf2gmtYWLghDP_gOdWF7--YH_br34-_96rNlcBDuigI2XOj-o6A6WzzXAFeuTu3bpjDFDLDTZGzWBywoADPmqR983WWeMvTUZnc9GILlsPC8_bEs6k3HqAGHlS5pnQJMF_169HOUzi6aYQz06URnXXshX8v-DtJ9XcWhQlVf6nKW_oVD5oFJzeYOvUylnwW_6W086m1TFVYpjiHSu_6XsNuaqnZ_2uzuMSfHZrtV_6FpVuTR5gHGQ8YmaLP9WO8Q" />
+        </div>
+        <div class="flex-1">
+          <span class="material-symbols-outlined mb-4 text-secondary" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+          <p class="mb-6 text-2xl font-medium leading-snug text-primary">
+            "At Novensoftech, we don't follow trends; we engineer stability. Our goal is to ensure your SAP investment is the most reliable asset in your portfolio."
+          </p>
+          <div>
+            <div class="text-lg font-bold">Dr. Marcus Chen</div>
+            <div class="text-on-surface-variant">Chief Strategy Officer, Novensoftech</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-24 bg-slate-100 px-8 py-16">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-4">
+      <div class="space-y-6">
+        <div class="flex items-center gap-4">
+          <img alt="Novensoftech logo" class="h-12 w-auto object-contain" src="./logo_softech1.png" />
+          <div class="text-2xl font-black text-slate-900">Novensoftech</div>
+        </div>
+        <p class="leading-relaxed text-slate-600">
+          Defining the next generation of enterprise intelligence through elite SAP consulting and innovative technology solutions.
+        </p>
+      </div>
+      <div>
+        <h5 class="mb-6 font-bold text-primary">Expertise</h5>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">S/4HANA Implementation</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Managed Services</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Cloud Strategy</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Industry 4.0</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="mb-6 font-bold text-primary">Company</h5>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">About Us</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Our Team</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Careers</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="mb-6 font-bold text-primary">Connect</h5>
+        <ul class="space-y-4">
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Contact Support</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Global Offices</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">LinkedIn</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 flex max-w-7xl flex-col items-center justify-between gap-6 border-t border-slate-200 pt-8 md:flex-row">
+      <p class="text-slate-600">© 2024 Novensoftech Pvt Ltd. All rights reserved.</p>
+      <div class="flex gap-8">
+        <a class="text-sm text-slate-500 hover:text-emerald-600" href="#">Privacy Policy</a>
+        <a class="text-sm text-slate-500 hover:text-emerald-600" href="#">Terms of Service</a>
+        <a class="text-sm text-slate-500 hover:text-emerald-600" href="#">Cookie Policy</a>
+        <a class="text-sm text-slate-500 hover:text-emerald-600" href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

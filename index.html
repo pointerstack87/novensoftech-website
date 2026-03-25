@@ -83,6 +83,14 @@
       vertical-align: middle;
     }
 
+    .bio-details summary {
+      list-style: none;
+    }
+
+    .bio-details summary::-webkit-details-marker {
+      display: none;
+    }
+
     body {
       font-family: "Inter", sans-serif;
     }
@@ -163,7 +171,7 @@
           </p>
         </div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12" id="services">
-          <div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-12 transition-all duration-500 hover:bg-primary md:col-span-8">
+          <div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-12 transition-all duration-500 hover:bg-primary md:col-span-8 scroll-mt-28" id="implementation">
             <div class="relative z-10">
               <span class="material-symbols-outlined mb-6 text-5xl text-secondary group-hover:text-secondary-fixed">settings_suggest</span>
               <h3 class="mb-4 text-3xl font-bold group-hover:text-white">Full-Scale ERP Implementation</h3>
@@ -175,7 +183,7 @@
               <span class="material-symbols-outlined text-[300px]">settings_suggest</span>
             </div>
           </div>
-          <div class="rounded-xl bg-secondary p-12 text-white md:col-span-4">
+          <div class="rounded-xl bg-secondary p-12 text-white md:col-span-4 scroll-mt-28" id="cloud-strategy">
             <span class="material-symbols-outlined mb-6 text-5xl">cloud_upload</span>
             <h3 class="mb-4 text-2xl font-bold">Cloud Migration</h3>
             <p class="leading-relaxed text-white/80">
@@ -189,7 +197,7 @@
               Unify reporting across SAP and non-SAP ERP data sources to drive faster, more confident decisions across the enterprise.
             </p>
           </div>
-          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-12 transition-all duration-500 hover:shadow-2xl md:col-span-8">
+          <div class="rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-12 transition-all duration-500 hover:shadow-2xl md:col-span-8 scroll-mt-28" id="managed-services">
             <div class="flex flex-col items-start gap-8 md:flex-row">
               <div class="flex-1">
                 <span class="material-symbols-outlined mb-6 text-5xl text-secondary">support_agent</span>
@@ -273,7 +281,7 @@
       </div>
     </section>
 
-    <section class="bg-surface py-32" id="stories">
+    <section class="bg-surface scroll-mt-28 py-32" id="stories">
       <div class="mx-auto max-w-7xl px-6">
         <div class="mb-16 flex items-end justify-between">
           <div class="space-y-4">
@@ -345,19 +353,145 @@
       </div>
     </section>
 
-    <section class="mx-auto mb-32 max-w-7xl px-6" id="contact">
-      <div class="flex flex-col items-center gap-12 rounded-xl border-l-4 border-secondary bg-surface-container-lowest p-12 md:flex-row">
-        <!-- <div class="flex-shrink-0">
-          <img class="h-24 w-24 rounded-full object-cover" alt="Professional portrait of a tech consultant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSF8cjqC2fNRcf2gmtYWLghDP_gOdWF7--YH_br34-_96rNlcBDuigI2XOj-o6A6WzzXAFeuTu3bpjDFDLDTZGzWBywoADPmqR983WWeMvTUZnc9GILlsPC8_bEs6k3HqAGHlS5pnQJMF_169HOUzi6aYQz06URnXXshX8v-DtJ9XcWhQlVf6nKW_oVD5oFJzeYOvUylnwW_6W086m1TFVYpjiHSu_6XsNuaqnZ_2uzuMSfHZrtV_6FpVuTR5gHGQ8YmaLP9WO8Q" />
-        </div> -->
-        <div class="flex-1">
-          <span class="material-symbols-outlined mb-4 text-secondary" style="font-variation-settings: 'FILL' 1;">format_quote</span>
-          <p class="mb-6 text-2xl font-medium leading-snug text-primary">
-            "Novensoftech was built for organizations that want senior ERP delivery, direct collaboration, and pragmatic execution from day one. We focus on clear plans, steady delivery, and long-term platform stability."
+    <section class="mx-auto mb-16 max-w-7xl scroll-mt-28 px-6" id="team">
+      <div class="mb-12 space-y-4">
+        <h2 class="text-5xl font-black tracking-tighter text-primary">Founding Partners</h2>
+        <p class="max-w-3xl text-xl leading-relaxed text-on-surface-variant">
+          Novensoftech is led by experienced ERP and talent delivery professionals focused on hands-on execution, client partnership, and long-term platform stability.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <article class="overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest shadow-sm">
+          <div class="bg-slate-100 p-6">
+            <img alt="Portrait of Mr. Aajam Shaik" class="h-[420px] w-full object-contain object-top" src="./partners/MrAajamShaik-Partner.jpeg" />
+          </div>
+          <div class="space-y-4 p-8">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-secondary">Partner</p>
+              <h3 class="mt-2 text-3xl font-bold text-primary">Mr. Aajam Shaik</h3>
+            </div>
+            <p class="leading-relaxed text-on-surface-variant">
+              Mr. Aajam Shaik is a Partner at Novensoftech Pvt Ltd, bringing over 15 years of extensive experience in SAP consulting, enterprise technology solutions, and client relationship management.
+            </p>
+            <details class="bio-details group">
+              <summary class="inline-flex cursor-pointer items-center rounded-lg border border-outline px-5 py-3 font-bold text-primary transition-all hover:bg-surface-container-low">
+                <span class="group-open:hidden">Read more</span>
+                <span class="hidden group-open:inline">Read less</span>
+              </summary>
+              <div class="mt-6 space-y-4">
+                <p class="leading-relaxed text-on-surface-variant">
+                  He plays a key role in delivering high-quality SAP services and ensuring successful project execution for clients across multiple industries.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Mr. Shaik has significant expertise in SAP ECC and SAP HANA environments, where he has successfully led implementations, upgrades, and system support initiatives. His strong technical and functional understanding of SAP systems enables organizations to optimize business processes and improve operational efficiency.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Throughout his career, Mr. Shaik has also held management and leadership responsibilities, overseeing project teams, managing client engagements, and ensuring high levels of client satisfaction.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  He has spent over a decade focusing on client relationship management, consistently delivering solutions that align with business objectives and exceed customer expectations.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Mr. Shaik has worked with global clients across several regions including India and Saudi Arabia, while also providing project delivery and support services for organizations in New Zealand, Dubai, Austria, and the United States.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  With a strong commitment to quality delivery and customer success, Mr. Shaik continues to contribute to Novensoftech's vision of providing world-class SAP consulting and global talent solutions.
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest shadow-sm">
+          <div class="bg-slate-100 p-6">
+            <img alt="Portrait of Mr. Imdad Mohammad K" class="h-[420px] w-full object-contain object-top" src="./partners/MrImdadMohammadK-Partner.jpeg" />
+          </div>
+          <div class="space-y-4 p-8">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-secondary">Partner</p>
+              <h3 class="mt-2 text-3xl font-bold text-primary">Mr. Imdad Mohammad K</h3>
+            </div>
+            <p class="leading-relaxed text-on-surface-variant">
+              Mr. Imdad Mohammad K is a Partner at Novensoftech Pvt Ltd, where he leads the company's global recruitment strategy, technology consulting initiatives, and client partnerships.
+            </p>
+            <details class="bio-details group">
+              <summary class="inline-flex cursor-pointer items-center rounded-lg border border-outline px-5 py-3 font-bold text-primary transition-all hover:bg-surface-container-low">
+                <span class="group-open:hidden">Read more</span>
+                <span class="hidden group-open:inline">Read less</span>
+              </summary>
+              <div class="mt-6 space-y-4">
+                <p class="leading-relaxed text-on-surface-variant">
+                  He plays a key role in expanding the firm's presence across international markets and delivering talent solutions for organizations seeking highly skilled IT and SAP professionals.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Mr. Imdad has extensive experience in SAP program management, enterprise technology transformation, and global talent acquisition.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Throughout his career, he has delivered successful projects for clients in defense, aerospace, automotive, oil and gas, and construction industries across the UAE, Germany, Saudi Arabia, and Australia, ensuring strong business value and customer satisfaction.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Prior to founding Novensoftech, Mr. Imdad held senior leadership roles in SAP program and project management, where he was responsible for overseeing large-scale SAP implementations, digital transformation initiatives, and enterprise system integrations.
+                </p>
+                <p class="leading-relaxed text-on-surface-variant">
+                  Mr. Imdad is passionate about building innovative talent solutions that connect organizations with world-class technology professionals. His vision is to create a globally trusted recruitment and consulting firm that empowers businesses through technology and talent.
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto mb-32 max-w-7xl scroll-mt-28 px-6" id="contact">
+      <div class="grid overflow-hidden rounded-xl border-l-4 border-secondary bg-surface-container-lowest md:grid-cols-[1.15fr_0.85fr]">
+        <div class="flex flex-col justify-center gap-6 p-12">
+          <span class="inline-flex w-fit rounded-full bg-secondary px-4 py-1 text-xs font-bold uppercase tracking-widest text-on-secondary">
+            Contact Novensoftech
+          </span>
+          <h3 class="text-4xl font-black tracking-tight text-primary">Start the conversation.</h3>
+          <p class="leading-relaxed text-on-surface-variant">
+            Reach out to discuss SAP services, cross-platform ERP support, implementation planning, managed services, or project-based consulting.
           </p>
-          <div>
-            <div class="text-lg font-bold">Founding Team</div>
-            <div class="text-on-surface-variant">Novensoftech</div>
+          <div class="space-y-4 text-base text-on-surface">
+            <p>
+              <span class="font-bold text-primary">Email:</span>
+              <a class="text-secondary transition-colors hover:text-emerald-700" href="mailto:info@novensoftech.com">info@novensoftech.com</a>
+            </p>
+            <p class="leading-relaxed">
+              <span class="font-bold text-primary">Office:</span>
+              2, Botanical Garden Rd, next to Coffee Day, Masjid Banda, Camelot Layout, Gachibowli, Hyderabad, Telangana 500084
+            </p>
+            <p class="leading-relaxed">
+              <span class="font-bold text-primary">Careers:</span>
+              Send your profile and a short introduction to
+              <a class="text-secondary transition-colors hover:text-emerald-700" href="mailto:hr@novensoftech.com?subject=Careers%20at%20Novensoftech">hr@novensoftech.com</a>.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 sm:flex-row">
+            <a class="rounded-lg bg-primary px-8 py-4 text-center font-bold text-on-primary transition-all hover:opacity-85" href="mailto:info@novensoftech.com?subject=Project%20Inquiry">
+              Email Us
+            </a>
+            <a class="rounded-lg border border-outline px-8 py-4 text-center font-bold text-primary transition-all hover:bg-surface-container-low" href="https://maps.google.com/?q=2,+Botanical+Garden+Rd,+next+to+Coffee+Day,+Masjid+Banda,+Camelot+Layout,+Gachibowli,+Hyderabad,+Telangana+500084">
+              View Location
+            </a>
+          </div>
+        </div>
+        <div class="border-t border-outline-variant/10 bg-slate-50 p-12 md:border-l md:border-t-0">
+          <div class="space-y-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-secondary">What Happens Next</p>
+              <h4 class="mt-3 text-3xl font-bold text-primary">Fast, direct engagement.</h4>
+            </div>
+            <div class="space-y-4 text-on-surface-variant">
+              <p>Share your ERP goals, current platform landscape, and timelines.</p>
+              <p>We align the right consulting, delivery, or support model to your requirement.</p>
+              <p>You get a direct conversation with a senior team member, not a generic lead funnel.</p>
+            </div>
+            <div class="rounded-xl bg-surface-container-low p-6">
+              <p class="text-sm font-semibold uppercase tracking-widest text-slate-500">Best For</p>
+              <p class="mt-3 leading-relaxed text-on-surface">
+                SAP programs, multi-ERP transitions, support takeovers, implementation planning, and capability ramp-up.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -374,13 +508,17 @@
         <p class="leading-relaxed text-slate-600">
           Defining the next generation of enterprise intelligence through elite SAP consulting, broader ERP expertise, and innovative technology solutions.
         </p>
+        <div class="space-y-2 text-sm text-slate-500">
+          <p><a class="transition-colors hover:text-emerald-600" href="mailto:info@novensoftech.com">info@novensoftech.com</a></p>
+          <p>2, Botanical Garden Rd, next to Coffee Day, Masjid Banda, Camelot Layout, Gachibowli, Hyderabad, Telangana 500084</p>
+        </div>
       </div>
       <div>
         <h5 class="mb-6 font-bold text-primary">Expertise</h5>
         <ul class="space-y-4">
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#solutions">S/4HANA Implementation</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#services">Managed Services</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#solutions">Cloud Strategy</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#implementation">S/4HANA Implementation</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#managed-services">Managed Services</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#cloud-strategy">Cloud Strategy</a></li>
           <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#stories">Launch Focus</a></li>
         </ul>
       </div>
@@ -388,18 +526,18 @@
         <h5 class="mb-6 font-bold text-primary">Company</h5>
         <ul class="space-y-4">
           <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#about">About Us</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#about">Our Team</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">Careers</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#team">Our Team</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="mailto:info@novensoftech.com?subject=Careers%20at%20Novensoftech">Careers</a></li>
           <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#stories">Focus Areas</a></li>
         </ul>
       </div>
       <div>
         <h5 class="mb-6 font-bold text-primary">Connect</h5>
         <ul class="space-y-4">
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">Contact Support</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">Global Offices</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">LinkedIn</a></li>
-          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">Twitter</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="mailto:info@novensoftech.com">Email Us</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="https://maps.google.com/?q=2,+Botanical+Garden+Rd,+next+to+Coffee+Day,+Masjid+Banda,+Camelot+Layout,+Gachibowli,+Hyderabad,+Telangana+500084">Visit Office</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#team">Founding Partners</a></li>
+          <li><a class="text-slate-500 transition-colors hover:text-emerald-600" href="#contact">Start a Conversation</a></li>
         </ul>
       </div>
     </div>
